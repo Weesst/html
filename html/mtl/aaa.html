@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>aaa</title>
+	<style>
+		*{
+		margin:0px;
+		/*外边距*/
+		padding:0px;
+		/*内边距*/
+		}
+		html{
+		height:100%;
+		}
+		body{
+			height:100%;
+			background:url('img/bg.jpg');
+			background-size:100% 100%;
+		}
+		div{
+			width:400px;
+			height:100%;
+			position:fixed;
+			/*固定位置，使参照物变为窗口*/
+			left:50%;
+			/*窗口宽度的50%*/
+			transform:translateX(-50%);
+			/*位移，百分百参照物是自身*/
+		}	
+		.bracket{
+			position:absolute;
+			top:220px;
+
+			left:50%;
+			/*位移，百分百参照物是自身*/
+			transform:translateX(-50%);
+		}
+		main{
+			background:url('img/fsw.png');
+			background-size:100% 100%;
+			width:400px;
+			height:400px;
+			position:absolute;
+			top:20px;
+			/*left:50%;*/
+			/*位移，百分百参照物是自身*/
+			/*transform:translateX(-50%);*/
+			animation:wa 20s infinite linear;
+
+		}
+		.happy{
+			position:absolute;
+			top:140px;
+			left:50%;
+			/*位移，百分百参照物是自身*/
+			transform:translateX(-50%);
+			width:320px;
+
+		}
+		/*.boy{
+			position:absolute;
+			top:15px;
+			left:50%;
+			width:70px;
+			height:100px;
+			transform:translateX(-40%);
+		}
+		.dog{
+			position:absolute;
+			top:67px;
+			left:43px;
+			width:70px;
+			height:100px;
+			
+		}
+		.mimi{
+			position:absolute;
+			top:193px;
+			left:-11px;
+			width:70px;
+			height:100px;
+
+		}
+		.girl{
+			position:absolute;
+			top:317px;
+			left:38px;
+			width:70px;
+			height:100px;
+			transform:translateX(-40%);
+		}
+		.girls{
+			position:absolute;
+			top:376px;
+			left:176px;
+			width:70px;
+			height:100px;
+			transform:translateX(-40%);
+		}
+		.hairboy{
+			position:absolute;
+			top:324px;
+			left:317px;
+			width:70px;
+			height:100px;
+			transform:translateX(-40%);
+		}
+		.mudog{			
+			position:absolute;
+			top:189px;
+			left:357px;
+			width:70px;
+			height:100px;
+			transform:translateX(-40%);
+
+		}
+		.shamegirl{
+			position:absolute;
+			top:66px;
+			left:305px;
+			width:70px;
+			height:100px;
+			transform:translateX(-40%);
+		}*/
+		main img{
+			position:absolute;
+			width:70px;
+			animation:w 20s infinite linear;
+			transform-origin:center top;
+			/*旋转中心点    水平方向  垂直方向 */
+		}
+		main img:nth-of-type(1){
+			top:15px;
+			left:173px;	
+		}
+		main img:nth-of-type(2){
+			top:67px;
+			left:43px;	
+		}
+		main img:nth-of-type(3){
+			top:193px;
+			left:-11px;
+		}
+		main img:nth-of-type(4){
+			top:317px;
+			left:38px;
+		}
+		main img:nth-of-type(5){
+			top:376px;
+			left:176px;
+		}
+		main img:nth-of-type(6){
+			top:324px;
+			left:317px;
+		}
+		main img:nth-of-type(7){
+			top:189px;
+			left:357px;
+		}
+		main img:nth-of-type(8){
+			top:66px;
+			left:305px;
+		}
+		@keyframes wa {
+			0%{
+				transform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(360deg);
+			}
+		}
+		@keyframes w {
+			0%{
+				transform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(-360deg);
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<audio src="media/The xx - Intro.mp3" autoplay></audio>
+	<div>
+		<img src="img/bracket.png" alt="支架" class="bracket">
+		<main>
+		<!-- 主要内容 -->
+		
+		<img src="img/boy.png" alt="">
+		<img src="img/dog.png" alt="">
+		<img src="img/mimi.png" alt="">
+		<img src="img/girl.png" alt="">
+		<img src="img/girls.png" alt="">
+		<img src="img/hairboy.png" alt="">
+		<img src="img/mudog.png" alt="">
+		<img src="img/shamegirl.png" alt="">
+		</main>
+		<img src="img/happy.png" alt="花" class="happy">
+	</div>
+</body>
+</html>

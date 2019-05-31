@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover">
+	<title>抽奖</title>
+	<style>
+	div{
+		width:90%;
+		position: fixed;
+		left: 50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+	}
+	.bg{
+		width:100%;
+		transition: all 5s ease-in-out;
+		transform:rotate(0deg);
+	}
+	#start{
+		width: 100px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		/*margin-left: -50%;
+		margin-top: -50%;*/
+		transform: translate(-50%,-50%);
+	}
+	@media (min-width: 992px) {
+		div{
+			width: 400px;
+			height: 400px;
+		}
+		
+	}
+</style>
+</head>
+<body>
+	<div>
+		<img src="img/bg.png" alt="" class="bg" id="bg">
+		<img src="img/start.png" alt="" id="start">
+	</div>
+	<script>
+		var n=0;
+		var arr=[0,51,102,153,204,255,306];
+		start.onclick=function(){
+			n++
+			var random=parseInt(Math.random()*arr.length);
+			bg.style.transform="rotate("+360*n+arr[random]+"deg)"
+			//var deg=arr[parseInt(Math.random()*arr.length)]+1080*n;
+    		//bg.style.transform=`rotate(${deg}deg)`
+
+		}
+	</script>
+</body>
+</html>
